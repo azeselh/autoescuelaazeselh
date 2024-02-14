@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body{
+    background-color: rgb(43, 42, 42);
+    text-align: left;
+    font-family: Oswald;
+}
+
+#botones{
+    text-align: center;
+}
+
+video{
+    border-radius: 30%;
+}
+
+h1{
+  color: rgb(238, 11, 136);
+}
+.button {
+  --green: rgb(238, 11, 136);
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 181, 253, 0.6), 0 0 9px 3px rgba(27, 68, 253, 0.2);
+}
+
+.button:hover {
+  color: #c208c9;
+  box-shadow: inset 0 0 10px rgba(27, 181, 253, 0.6), 0 0 9px 3px rgba(27, 68, 253, 0.2);
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+.button:hover:before {
+  transform: translateX(15em);
+}
+
+audio {
+  width: 100%;
+  }
+
+audio:hover{
+  filter: sepia(80%) saturate(100%) grayscale(0%) contrast(80%) hue-rotate(46deg) invert(100%);
+  width: 15%;
+}
+
+table{
+  text-align: justify;
+}
+
+input{
+  color: rgb(97, 67, 2);
+  background-color: rgb(117, 200, 114);
+  border-radius: 10px;
+}
+
+.navinicio{
+  background-color: rgb(255, 255, 255);
+  color: bisque;
+  background-image: url(./Files/banner.gif);
+  background-position: 10%;
+  background-size: 8%;
+}
+
+.datos{
+  text-align: right;
+  margin-right: 5%;
+}
+
+
+.container form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 20px ;
+}
+
+.container label {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+  border-radius: 20px ;
+}
+
+.container  label input {
+  position: absolute;
+  left: -9999px;
+  border-radius: 20px ;
+}
+
+.container label input:checked + span {
+  background-color: #508ea1;
+  color: rgb(206, 132, 22);
+  border-radius: 20px ;
+}
+
+.container label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em #00e4ab;
+  border-radius: 20px ;
+}
+
+.container label span {
+  display: flex;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  transition: 0.25s ease;
+  color: #42418b;
+  border-radius: 20px ;
+}
+
+.container label span:hover {
+  background-color: #ffe76d;
+  border-radius: 20px ;
+}
+
+.container label span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em #00005c;
+  border-radius: 20px ;
+}
+
+.tittema{
+  padding: 20%;
+}
+
+.container{
+  background-color: rgb(238, 235, 231);
+}
+form{
+  background-color: rgb(238, 235, 231);
+  width: 100%;
+}
+h2{
+  font-size: 10px;
+}
+.tittest{
+  color: #008cff;
+}
+
+
+.inises{
+  background-image: url(./Files/car.jpg);
+  background-position: center;
+  color: blue;
+  font-weight: bolder;
+  font-style:italic ;
+  color:rgb(208, 255, 0);
+  text-decoration: chocolate;
+  text-shadow: 2px 1px 1px #000000;
+}
+hr{
+  width: 50%;
+  color: #000000;
+  border-width: 3px;
+}
+
+.der {
+  display: flex;
+  width: 43%;
+  justify-content: flex-end;
+  padding-bottom: 10%;
+  padding-top: 2%;
+}
+.izq {
+  display: flex;
+  height: 20%;
+  width: 49%;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  padding-bottom: 10%;
+  text-align: left;
+  padding-top: 2%;
+}
+
+.registro{
+  background-color: rgb(43, 42, 42);
+  color: #c208c9;
+}
+
+.puntuaciones{
+  background-color: rgb(249, 197, 197);
+  color: #514806;
+  text-align: center;
+  width: 30%;
+  border-radius: 30px;
+}
+
+.imgtest{
+  width: 50%;
+  height: 500px;
+  border-radius: 20%;
+  box-shadow: 2px 2px 2px 2px #000000;
+}
+.imgtest:hover{
+
+  transform: scale(1.1);
+}
+.respuestas{
+  padding-top: 2%;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.correcta{
+  color: #1c5423;
+  font-size: 30px;
+}
